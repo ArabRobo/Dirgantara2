@@ -32,7 +32,7 @@ HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
 # Database
 DB_URI = os.environ.get("DATABASE_URL", "postgres://pqfvxiyt:dIN2tE98VOYno-sOeviKAgdoaycXw0OF@suleiman.db.elephantsql.com/pqfvxiyt")
 
-PROTECT_CONTENT = strtobool(os.environ.get("PROTECT_CONTENT", "False"))
+PROTECT_CONTENT = strtobool(os.environ.get("PROTECT_CONTENT", "True"))
 
 # ID dari Channel Atau Group Untuk Wajib Subscribenya
 FORCE_SUB_1 = int(os.environ.get("FORCE_SUB_1", "-1001865340427"))
