@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7131604616:AAHfJuLG-nwFVGBiU6rsuzs0yX8bsFrVU7M")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6527263237:AAFBasbZJngeR6JjIk6zawiDGVLh0C4EdLE")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "26730559"))
@@ -19,19 +19,19 @@ APP_ID = int(os.environ.get("APP_ID", "26730559"))
 API_HASH = os.environ.get("API_HASH", "54e0fd326f54b4ea91fdcbdf98e3cf4e")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002126368591"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002002664177"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "6740437351"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6136669264"))
 
 #Database 
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://emakbot:fadhil123@cluster0.mvpxhyd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DATABASE_NAME", "emakbot")
 
 #force sub channel id, if you want enable force sub
-FORCESUB_CHANNEL = int(os.environ.get("FORCESUB_CHANNEL", "-1001632382788"))
-FORCESUB_CHANNEL2 = int(os.environ.get("FORCESUB_CHANNEL2", "-1002029632356"))
-FORCESUB_CHANNEL3 = int(os.environ.get("FORCESUB_CHANNEL3", "-1002117449333"))
+FORCESUB_CHANNEL = int(os.environ.get("FORCESUB_CHANNEL", "-1001865340427"))
+FORCESUB_CHANNEL2 = int(os.environ.get("FORCESUB_CHANNEL2", "-1001652988364"))
+FORCESUB_CHANNEL3 = int(os.environ.get("FORCESUB_CHANNEL3", "-1002128822959"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -39,7 +39,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "<b>Hai {first}\n\n Gua adalah file-sharing bot multi forcesub yang di buat oleh @SiArabStore</b>")
 try:
     ADMINS=[6376328008]
-    for x in (os.environ.get("ADMINS", "6740437351").split()):
+    for x in (os.environ.get("ADMINS", "6136669264").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
